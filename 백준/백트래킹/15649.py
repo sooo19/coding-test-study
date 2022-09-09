@@ -14,7 +14,7 @@ def back():
         print(" ".join(map(str, ans)))
         return      # ans 값을 출력하면 return (다시 새로운 배열 생성)
     
-    for i in range(1, N+1):
+    for i in range(1, N+1):     # 각 자리마다 1~N까지 숫자를 모두 넣어보며 고려할 수 있음 (단, 앞에서 나온 숫자는 제외)
         if i not in ans:
             ans.append(i)
             back()      # 재귀 (계속 뒤에 새 숫자 가져옴)
