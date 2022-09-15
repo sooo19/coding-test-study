@@ -4,7 +4,8 @@
 def solution(survey, choices):
     answer = ''
     
-    score = [[0]*2]*4       # R/T, C/F, J/M, A/N
+    # score = [[0]*2]*4       # R/T, C/F, J/M, A/N
+    score = [[0]*2 for i in range(4)]
     type = [['R', 'T'], ['C', 'F'], ['J', 'M'], ['A', 'N']]     # 유형 저장
     
     for i in range(len(survey)):
