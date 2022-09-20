@@ -1,4 +1,6 @@
-# 오류
+# 오류 수정 중
+# https://school.programmers.co.kr/learn/courses/30/lessons/42587
+
 def solution(priorities, location):
     answer = 0
     

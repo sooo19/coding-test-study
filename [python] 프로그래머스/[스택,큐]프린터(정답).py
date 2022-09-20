@@ -13,5 +13,3 @@ def solution(priorities, location):
                 max_num = max(priorities)       # 배열의 새로운 최댓값 갱신
                 if i == location:   # i값이 찾는 값인 location과 같다면 정답 리턴
                     return answer
-
-    return

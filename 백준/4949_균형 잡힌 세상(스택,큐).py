@@ -15,14 +15,14 @@ def solution(i):
             else:
                 stack.pop()
         elif j == ']':
-            if len(stack) == 0 or stack[-1] != '[':     
+            if len(stack) == 0 or stack[-1] != '[':     # 닫힘 대괄호이면, stack 안에 아무 것도 들어있지 않거나 ( 로 열려있는 상태일 경우 불균형이라고 판단    
                 return 'no'
             else:
                 stack.pop()
 
-    if len(stack) == 0:
+    if len(stack) == 0:     # stack에 대한 모든 연산 후, 스택이 다 비워지면 균형잡힌 상태
         return 'yes'
-    else:
+    else:       # stack 안에 기호가 남아있는 경우 불균형 상태
         return 'no'
 
 
