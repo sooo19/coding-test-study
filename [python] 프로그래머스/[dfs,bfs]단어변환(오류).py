@@ -1,3 +1,5 @@
+# 오류 발생 코드 (테스트 케이스의 값과 틀림)
+
 def solution(begin, target, words):    
     if target not in words:     # target 단어가 words 배열에 없으면 0을 리턴
         return 0
