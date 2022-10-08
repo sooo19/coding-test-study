@@ -1,4 +1,4 @@
-# 현재 오류 발생 (수정 중)
+# 오류 수정 완료 (정답 결과 출력 코드)
 
 cnt = 0
 def DFS(v1, check, graph):
@@ -7,7 +7,7 @@ def DFS(v1, check, graph):
     cnt += 1
     for i in graph[v1]:
         if check[i] == 0:       # 연결된 노드들 중 방문하지 않은 노드들을 계속 탐색
-            DFS(v1, check, graph)
+            DFS(i, check, graph)
             
 
 def solution(n, wires):
