@@ -13,6 +13,6 @@ def BFS():
                 if nv > 7:
                     continue    # nv가 7보다 크면 append되지 않음
                 queue.append(nv)
-            L += 1      # Level 증가 (아래로 내려감)
+        L += 1      # Level 증가 (아래로 내려감)
 
 BFS()
