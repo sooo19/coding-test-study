@@ -6,7 +6,7 @@ def BFS():
     L = 0
     while(queue):
         length = len(queue)     # length : 해당 Level에서의 원소의 개수
-        for _ in range(length):
+        for _ in range(length):     # level의 개수만큼 큐에 append&popleft 진행함
             v = queue.popleft()
             print(v, end = ' ')
             for nv in [v*2, v*2+1]:     # 해당 노드의 아래 가지 2개
