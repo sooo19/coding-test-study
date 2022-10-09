@@ -1,3 +1,5 @@
+# 2번째로 생각한 아이디어로 구현한 코드 (딕셔너리 사용)
+
 import collections
 def solution(gems):
     answer = []
