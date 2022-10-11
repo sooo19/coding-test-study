@@ -17,6 +17,7 @@ def bfs(maps, visited, x, y):
 
     queue = deque()
     queue.append((x, y))
+    visited[x][y] = 1
     
     while queue:
         x, y = queue.popleft()
