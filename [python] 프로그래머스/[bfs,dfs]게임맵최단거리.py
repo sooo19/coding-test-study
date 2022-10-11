@@ -1,6 +1,3 @@
-# BFS/DFS 문제
-# (1,1)에서 게임 캐릭터가 시작해서 (n,m)까지 최단거리로 가는 문제 (최단 거리 값 구하기) 
-
 from collections import deque
 def solution(maps):
     answer = 0
@@ -28,14 +25,13 @@ def bfs(maps, visited, x, y):
             ny = y + dy[i]
             
             if nx >= 0 and nx < n and ny >= 0 and ny < m:
-                if maps[nx][ny] == 1:
+                if maps[nx][ny] == 1 and visited[nx][ny] == 0:
                     maps[nx][ny] = maps[x][y]+1
                     queue.append((nx, ny))
+                    visited[nx][ny] = 1
     
     if maps[n-1][m-1] == 1:
         return -1
     else:
         return maps[n-1][m-1]
-    
-
     
