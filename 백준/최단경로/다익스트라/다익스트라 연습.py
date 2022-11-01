@@ -15,7 +15,7 @@ for _ in range(m):
 def dijkstra(start):
     queue = []
     heapq.heappush(queue, (0, start))
-    distance[start] = 0
+    distance[start] = 0     # 시작 지점의 최단경로는 0으로 초기화 (중요)
 
     while queue:
         dist, now = heapq.heappop(queue)
