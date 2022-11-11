@@ -26,8 +26,5 @@ for i in range(c):
                 team_b.remove(b)
     print(answer)
 
-# n = int(input())
-# for _ in range(n):
-#     s = str(input())
-#     print('Hello, ' + s + '!')
+
     
